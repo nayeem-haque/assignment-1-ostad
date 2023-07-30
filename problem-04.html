@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem-04</title>
+</head>
+<body>
+    <script>
+        function calculateGrade(marks){
+           
+            switch(true){
+            case (marks >= 90 && marks <= 100 ):
+            return 'A';
+            break; 
+            
+            case (marks >= 80 && marks <= 89 ):
+            return 'B';
+            break;
+
+            case (marks >= 70 && marks <= 79 ):
+            return 'C';
+            break;
+
+            case (marks >= 60 && marks <= 69 ):
+            return 'D';
+            break;
+
+            case (marks < 60 ):
+            return 'F';
+            
+        }
+    }
+    document.write(calculateGrade(85));
+
+    </script>
+</body>
+</html>

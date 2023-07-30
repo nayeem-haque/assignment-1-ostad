@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem-01</title>
+</head>
+<body>
+    <script>
+
+
+function calculateDiscountedAmount(totalPurchaseAmount) {
+     let discountPercentage = 0;
+  
+     if (totalPurchaseAmount >= 200) {
+       discountPercentage = 15;     
+    } 
+       else if (totalPurchaseAmount >= 100) {
+      discountPercentage = 10;
+      } 
+    else if (totalPurchaseAmount >= 50) {
+      discountPercentage = 5;
+    }
+  
+    const discountAmount = (totalPurchaseAmount * discountPercentage) / 100;
+    const totalAmountWithDiscount = totalPurchaseAmount - discountAmount;
+  
+     document.write("Discounted amount: $" + discountAmount.toFixed(2) +'<br>');
+     document.write("Total amount with discount: $" + totalAmountWithDiscount.toFixed(2));
+  }
+  
+   calculateDiscountedAmount(150);
+    </script>
+</body>
+</html>
